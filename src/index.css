@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'FontPadrao';
+    src: url('../font/Aldrich-Regular.ttf') format('truetype');
+}
+@layer utilities {
+  /* Cria uma classe utilitária chamada 'no-scrollbar' */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+@theme { /*anotar*/
+  --breakpoint-tablet: 40rem;   /* 640px */
+  --breakpoint-laptop: 64rem;   /* 1024px */
+  --breakpoint-desktop: 80rem;  /* 1280px */
+}
+body {
+  font-family: 'FontPadrao', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
