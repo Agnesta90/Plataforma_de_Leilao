@@ -37,7 +37,7 @@ function Perfil(){
                         </span>
                         <aside className='flex flex-col justify-around h-2/5 w-full pt-4'>
                             <Button_menu><UserPen /><p>Editar Perfil</p></Button_menu>
-                            <Button_menu onclick={navigate('/cadastro')}><SquarePlus size={20}/><p>Cadastrar Produto</p></Button_menu>
+                            <Button_menu onclick={() => navigate('/cadastro')}><SquarePlus size={20}/><p>Cadastrar Produto</p></Button_menu>
                             <Button_menu><Bolt size={20} color="#000000" strokeWidth={1.5} /><p>Configurações</p></Button_menu>
                             <Button_menu><History size={20} color="#000000" strokeWidth={1.5} /><p >Histórico</p></Button_menu>
                             <Button_menu><SquareArrowRightExit size={20} color="#000000" strokeWidth={1.5} /><p >Sair da sessão</p></Button_menu>

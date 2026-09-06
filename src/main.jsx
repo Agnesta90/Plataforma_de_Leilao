@@ -12,40 +12,43 @@ import Pesquisa from './pages/pesquisar.jsx'
 import Carrinho from './pages/CarrinhoMobile.jsx'
 
 const router = createBrowserRouter([
+    {
+      path:'/',
+      element: <App />,
+    },
+    {
+      path:'/pagina-card',
+      element: <Pagina_Card/>,
+    },
+    {
+      path:'/login',
+      element: <Login/>,
+    },
+    {
+      path:'/perfil',
+      element: <Perfil/>,
+    },
+    {
+      path:'/leilao',
+      element: <Leilao/>,
+    },
+    {
+      path:'/cadastro',
+      element: <Cadastro/>,
+    },
+    {
+      path:'/pesquisa',
+      element: <Pesquisa/>,
+    },
+    {
+      path:'/carrinho',
+      element: <Carrinho/>,
+    }
+  ],
   {
-    path:'/',
-    element: <App />,
-  },
-  {
-    path:'/pagina-card',
-    element: <Pagina_Card/>,
-  },
-  {
-    path:'/login',
-    element: <Login/>,
-  },
-  {
-    path:'/perfil',
-    element: <Perfil/>,
-  },
-  {
-    path:'/leilao',
-    element: <Leilao/>,
-  },
-  {
-    path:'/cadastro',
-    element: <Cadastro/>,
-  },
-  {
-    path:'/pesquisa',
-    element: <Pesquisa/>,
-  },
-  {
-    path:'/carrinho',
-    element: <Carrinho/>,
+    basename: '/Site_de_Leilao/',
   }
-
-])
+)
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <RouterProvider router={router}></RouterProvider>

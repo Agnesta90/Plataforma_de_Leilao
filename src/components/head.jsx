@@ -12,12 +12,11 @@ export default function Head({ className }) {
  
   const usuario = JSON.parse(sessionStorage.getItem("user")) || "";
 
-  const produtosSelecionados = produtos.filter((item) => item.produtoSelecionado?? item) || '' 
-  const produtoSelecionadoSalvo = JSON.parse(sessionStorage.getItem("produtoSalvo")) || "";
+  const produtosSelecionados = produtos.filter((item) => item.produtoSelecionado);
 
-  
-  const [Carrinho, setCarrinho] = useState([...produtosSelecionados])
-  produtoSelecionadoSalvo? (Carrinho.push(produtoSelecionadoSalvo)) : null
+  const produtoSelecionadoSalvo = JSON.parse(sessionStorage.getItem("produtoSalvo")) || null;
+
+  const [Carrinho, setCarrinho] = useState(() => [...produtosSelecionados, ...(produtoSelecionadoSalvo ? [produtoSelecionadoSalvo] : []), ]);
 
   const {register, handleSubmit} = useForm()
 
@@ -29,16 +28,15 @@ export default function Head({ className }) {
     const novaCarrinho = Carrinho.filter((num) => num.id_Produto !== id)
     setCarrinho(novaCarrinho)
   }
-
   
   return (
     <div className={className}>
       <header className="p-2.5 bg-[#1E1C2F] flex justify-center ">
-        <div className="flex items-center justify-around gap-2 w-full tablet:w-3/4" > {/*anotar*/}
+        <div className="flex items-center justify-around gap-2 w-full tablet:w-3/4" > 
           <Link to="/">
             <div className="flex flex-row items-center tablet:m-2.5 ">
               <div className="w-18 tablet:w-30 ">
-                <img className="w-full" src="/img/logo.png" alt="Logo" />
+                <img className="w-full" src="public/img/logo.png" alt="Logo" />
               </div>
               <h1 className="text-white tablet:text-3xl m-2 text-2xl hidden tablet:block">
                 Compra <br />
@@ -136,7 +134,7 @@ export default function Head({ className }) {
               {!usuario && <Button_menu onclick={() => navigate('/login')}><LogIn size={20} color="#000000" strokeWidth={1.5} />Login/cadastro</Button_menu>}
               <Button_menu onclick={() => navigate('/carrinho')}><ShoppingCart size={20} color="#000000" strokeWidth={1.5}></ShoppingCart>Carrinho</Button_menu>
               <Button_menu onclick={() => navigate('/perfil')}>
-                <div className="w-6 h-6"><img src="/img/marteloIcon.png" alt="" /></div>Meus Leilões</Button_menu>
+                <div className="w-6 h-6"><img src="public/img/marteloIcon.png" alt="" /></div>Meus Leilões</Button_menu>
               <Button_menu><SquareArrowRightExit size={20} color="#000000" strokeWidth={1.5} /><p >Sair da sessão</p></Button_menu>
             </dialog>
           </div>

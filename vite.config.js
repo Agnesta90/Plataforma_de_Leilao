@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Site_Compra_Facil'
+  base: '/Site_de_Leilao/'
 })

@@ -82,7 +82,7 @@ function Login(){
                                     <Link to='/'>
                                         <div className=" flex items-center ">
                                             <div className="w-20 laptop:w-40">
-                                                <img className="w-full" src="/img/logo.png" alt="Logo" />
+                                                <img className="w-full" src="public/img/logo.png" alt="Logo" />
                                             </div>
                                             <h1 className='text-white text-2xl laptop:text-4xl m-2'>Compra  <br />Fácil</h1>
                                         </div>
@@ -95,7 +95,7 @@ function Login(){
                             </header>
                             <main className='m-3.5 w-full laptop:w-150 laptop:m-auto laptop:col-[1-1] laptop:bg-white laptop:row-start-1 p-3 rounded-2xl bg-[#2D2A4A]/40 backdrop-blur-md border border-white/10 '>
                                 <div className="w-20 m-auto laptop:hidden">
-                                    <img className="w-full" src="/img/logo.png" alt="Logo" />
+                                    <img className="w-full" src="public/img/logo.png" alt="Logo" />
                                 </div>
                                 <h1 className='text-[50px] text-center m-1'>Login</h1>
                                 <form onSubmit={loginForm.handleSubmit(onSubmitLogin)} className='flex flex-col gap-4 m-3.5'>
@@ -115,7 +115,7 @@ function Login(){
                                     
                                     {mensagem}
                                     <ButtonPadrao type='submit' >Entrar</ButtonPadrao>
-                                    <p className='text-[12px]'>Não tem conta? <button onClick={() => setConta(false)} className='text-blue-600 hover:text-blue-800 underline font-medium'>Criar conta</button></p>
+                                    <p className='text-[12px] tablet:hidden'>Não tem conta? <button onClick={() => setConta(false)} className='text-blue-600 hover:text-blue-800 underline font-medium'>Criar conta</button></p>
                                 </form>
                             </main>
                         </div>
@@ -128,7 +128,7 @@ function Login(){
                                 <Link to='/'>
                                     <div className=" flex items-center ">
                                         <div className="w-40">
-                                            <img className="w-full" src="./img/logo.png" alt="Logo" />
+                                            <img className="w-full" src="public/img/logo.png" alt="Logo" />
                                         </div>
                                         <h1 className='text-white text-4xl m-2'>Compra  <br />Fácil</h1>
                                     </div>
@@ -142,7 +142,7 @@ function Login(){
                             <form onSubmit={singForm.handleSubmit(onSubmitSing)} className='laptop:grid grid-cols-[1fr_1fr_120px_96px] grid-rows-[70px_70px_160px_70px_70px] laptop:gap-2.5 flex flex-col gap-6 overflow-hidden w-full h-177.5 laptop:h-128 laptop:bg-white  bg-[#2D2A4A]/40 backdrop-blur-md border border-white/10 p-3.5 rounded-3xl '> 
                                 <div className='flex items-center gap-1.5 laptop:hidden '>
                                     <div className="w-10 ">
-                                        <img className="w-full" src="/img/logo.png" alt="Logo" /> 
+                                        <img className="w-full" src="public/img/logo.png" alt="Logo" /> 
                                     </div>
                                     <p>Sing in</p>
                                 </div>
@@ -174,10 +174,10 @@ function Login(){
                                     {singForm.formState.errors?.passwordAgain?.type == "required" && (<p className='text-red-600 text-[14px]'>Senha de confirmação é obrigatório</p>)}
                                     { confirmation && (<p className='text-red-600 text-[14px]'>Senha incorreta</p>) }
                                 </label>
-                                <div className='overflow-hidden col-[2/5] row-[1/5] shadow-[4px_4px_0px_#fff] laptop:shadow-[4px_4px_0px_#000] order-1 w-20 h-20 laptop:w-[90%] laptop:h-[90%] rounded-[100%] laptop:rounded-[0%] ml-auto mr-auto'>
-                                    <label htmlFor="userImg" className= 'flex h-full w-full cursor-pointer items-center justify-center border-2 rounded-[100%] laptop:rounded-[0%]'>
+                                <div className='overflow-hidden col-[2/5] row-[1/5] shadow-[4px_4px_0px_#fff] laptop:shadow-[4px_4px_0px_#000] order-1 w-20 h-20 laptop:w-[90%] laptop:h-[90%] rounded-[100%] laptop:rounded-[0%] ml-auto mr-auto tablet:mr-0'>
+                                    <label htmlFor="userImg" className= 'flex h-full w-full cursor-pointer items-center tablet:items-end justify-center border-2 rounded-[100%] laptop:rounded-[0%]'>
                                         <input type="file" id="userImg"  className='hidden' {...singForm.register('userImg', {onChange: handleImagem})}    />
-                                        <aside className='w-full h-full  '>
+                                        <aside className='w-full h-full '>
                                             <img src={imagem} alt="" className='w-full h-full object-contain rounded-[100%] laptop:rounded-[0%]'/>
                                         </aside>
                                     </label>
@@ -185,6 +185,7 @@ function Login(){
                                 <div className='order-3 flex gap-1.5 ml-auto pr-1.5 row-end-6 col-[3/5]'>
                                     <ButtonPadrao type='submit' className='w-30 h-14 mt-1.5'>Cadastrar</ButtonPadrao>
                                     <button type='reset' className="w-24 h-14 p-2 rounded-[10px]  bg-[#3d0866a6] text-white font-bold shadow-[4px_4px_0px_#fff] laptop:shadow-[4px_4px_0px_#000] cursor-pointer   mt-1.5 " onClick={limparFormulario}>Cancelar</button>
+                                    
                                 </div>
                             </form>
                         </main>

@@ -3,7 +3,7 @@ import { MapPin, Users } from 'lucide-react';
 export default function CardMostra({dados}){
     return(
         <>
-            <article  className= "shadow-[4px_4px_0px_#000] tablet:w-150 w-100 tablet:h-117.5 p-3 rounded-2xl  text-black cursor-pointer  mt-1 bg-amber-50 mb-2.5" key={dados.img_Produto}>
+            <article  className= "shadow-[4px_4px_0px_#000] tablet:w-150 w-100 tablet:h-117.5 p-3 rounded-2xl  text-black cursor-pointer  mt-1 mb-2.5" key={dados.img_Produto}>
                 <div className='w-full tablet:h-2/3 flex'>
                     <section className="w-[60%]  h-45 tablet:h-full  rounded-2xl overflow-hidden ">
                         <img src={dados.img_produto} alt="" className="w-full h-full "/>

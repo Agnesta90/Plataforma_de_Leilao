@@ -5,7 +5,6 @@
     src: url('../font/Aldrich-Regular.ttf') format('truetype');
 }
 @layer utilities {
-  /* Cria uma classe utilitária chamada 'no-scrollbar' */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -14,10 +13,10 @@
     scrollbar-width: none;
   }
 }
-@theme { /*anotar*/
-  --breakpoint-tablet: 40rem;   /* 640px */
-  --breakpoint-laptop: 64rem;   /* 1024px */
-  --breakpoint-desktop: 80rem;  /* 1280px */
+@theme { 
+  --breakpoint-tablet: 40rem;   
+  --breakpoint-laptop: 64rem;   
+  --breakpoint-desktop: 80rem;  
 }
 body {
   font-family: 'FontPadrao', sans-serif;

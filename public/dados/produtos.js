@@ -11,7 +11,7 @@ export const produtos = [
     location: "Fortaleza, CE - Brasil",
     lances: 13,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -24,7 +24,7 @@ export const produtos = [
     location: "Recife, PE - Brasil",
     lances: 7,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -37,7 +37,7 @@ export const produtos = [
     location: "Salvador, BA - Brasil",
     lances: 9,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -50,7 +50,7 @@ export const produtos = [
     location: "São Paulo, SP - Brasil",
     lances: 11,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -63,7 +63,7 @@ export const produtos = [
     location: "Curitiba, PR - Brasil",
     lances: 22,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -76,7 +76,7 @@ export const produtos = [
     location: "João Pessoa, PB - Brasil",
     lances: 19,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -89,7 +89,7 @@ export const produtos = [
     location: "Natal, RN - Brasil",
     lances: 20,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -102,7 +102,7 @@ export const produtos = [
     location: "Belém, PR - Brasil",
     lances: 2,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -115,7 +115,7 @@ export const produtos = [
     location: "Manaus, AM - Brasil",
     lances: 1,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -128,7 +128,7 @@ export const produtos = [
     location: "Brasília, DF - Brasil",
     lances: 11,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
 
   // FURNITURE
@@ -143,7 +143,7 @@ export const produtos = [
     location: "Fortaleza, CE - Brasil",
     lances: 12,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -156,7 +156,7 @@ export const produtos = [
     location: "Recife, PE- Brasil",
     lances: 23,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -169,7 +169,7 @@ export const produtos = [
     location: "São Luís, MA - Brasil",
     lances: 17,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -182,7 +182,7 @@ export const produtos = [
     location: "Salvador, BH - Brasil",
     lances: 10,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -195,7 +195,7 @@ export const produtos = [
     location: "Curitiba, PR - Brasil",
     lances: 9,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -208,7 +208,7 @@ export const produtos = [
     location: "Florianópolis, SC - Brasil",
     lances: 7,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -221,7 +221,7 @@ export const produtos = [
     location: "Goiânia, GO - Brasil",
     lances: 2,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -234,7 +234,7 @@ export const produtos = [
     location: "Vitória, ES - Brasil",
     lances: 14,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -247,7 +247,7 @@ export const produtos = [
     location: "Maceió, AL - Brasil",
     lances: 27,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -260,7 +260,7 @@ export const produtos = [
     location: "Aracaju, SE - Brasil",
     lances: 2,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
 
   // ELECTRONICS
@@ -275,7 +275,7 @@ export const produtos = [
     location: "São Paulo, SP - Brasil",
     lances: 4,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -288,7 +288,7 @@ export const produtos = [
     location: "Recife, PE - Brasil",
     lances: 11,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -301,7 +301,7 @@ export const produtos = [
     location: "Curitiba, PR - Brasil",
     lances: 12,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -314,7 +314,7 @@ export const produtos = [
     location: "Fortaleza, CE - Brasil",
     lances: 10,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -327,7 +327,7 @@ export const produtos = [
     location: "Manaus, AM - Brasil",
     lances: 30,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -340,7 +340,7 @@ export const produtos = [
     location: "Natal, RN - Brasil",
     lances: 2,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -353,7 +353,7 @@ export const produtos = [
     location: "Belém, PA - Brasil",
     lances: 20,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -366,7 +366,7 @@ export const produtos = [
     location: "João Pessoa, PB - Brasil",
     lances: 2,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -379,7 +379,7 @@ export const produtos = [
     location: "Brasília, DF - Brasil",
     lances: 3,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -392,7 +392,7 @@ export const produtos = [
     location: "Salvador, BH - Brasil",
     lances: 5,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
 
   // CLOTHES
@@ -407,7 +407,7 @@ export const produtos = [
     location: "Fortaleza, CE - Brasil",
     lances: 18,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -420,7 +420,7 @@ export const produtos = [
     location: "Recife, PE - Brasil",
     lances: 15,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -433,7 +433,7 @@ export const produtos = [
     location: "Curitiba, PR - Brasil",
     lances: 22,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -446,7 +446,7 @@ export const produtos = [
     location: "São Paulo, SP - Brasil",
     lances: 7,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -459,7 +459,7 @@ export const produtos = [
     location: "Manaus, AM - Brasil",
     lances: 10,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -472,7 +472,7 @@ export const produtos = [
     location: "Florianópolis, SC - Brasil",
     lances: 12,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -485,7 +485,7 @@ export const produtos = [
     location: "Vitória, ES - Brasil",
     lances: 27,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -498,7 +498,7 @@ export const produtos = [
     location: "Natal, RN - Brasil",
     lances: 27,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -511,7 +511,7 @@ export const produtos = [
     location: "Belém, PA - Brasil",
     lances: 8,
     produtoSelecionado: true,
-    produtoVendido: true,
+    produtoVendido: false,
   },
   {
     id_Produto: crypto.randomUUID(),
@@ -524,7 +524,7 @@ export const produtos = [
     location: "Porto Alegre, RS - Brasil",
     lances: 17,
     produtoSelecionado: false,
-    produtoVendido: true,
+    produtoVendido: false,
   },
 ];
 

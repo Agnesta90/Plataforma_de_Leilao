@@ -15,7 +15,7 @@ function Pagina_Card() {
   const produtosParecidos = produtos?.filter((item) => item.id_Produto !== dados.id_Produto) || [];
 
   function ProdutoSelecionado(){
-    const produtoSalvo = { dados }
+    const produtoSalvo = ({ ...dados, produtoSelecionado: true })
     sessionStorage.setItem(`produtoSalvo`, JSON.stringify(produtoSalvo)) 
   }
   
