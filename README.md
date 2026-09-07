@@ -14,6 +14,6 @@ O projeto conta com:
 <p>📱 Interface responsiva</p>
 <p>🧩 Componentização com React</p>
 <p>🛣️ Navegação entre páginas com React Router</p>
-<p>📝 Validação de formulários com React Hook Form</p>p
+<p>📝 Validação de formulários com React Hook Form</p>
 
-## Observação: esta versão é um projeto frontend para fins de estudo e demonstração. Os dados de usuários, produtos e ofertas ainda são simulados no navegador.
+ Observação: esta versão é um projeto frontend para fins de estudo e demonstração. Os dados de usuários, produtos e ofertas ainda são simulados no navegador.
