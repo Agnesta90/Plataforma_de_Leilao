@@ -1,4 +1,4 @@
-Plataforma de Leilões
+# Plataforma de Leilões
 
 Aplicação frontend desenvolvida com React, Vite e Tailwind CSS, criada para simular uma plataforma de leilões online.
 
