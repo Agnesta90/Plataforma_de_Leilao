@@ -17,3 +17,4 @@ O projeto conta com:
 <p>📝 Validação de formulários com React Hook Form</p>
 
  Observação: esta versão é um projeto frontend para fins de estudo e demonstração. Os dados de usuários, produtos e ofertas ainda são simulados no navegador.
+O Projeto: <a href="https://agnesta90.github.io/Plataforma_de_Leilao/">https://agnesta90.github.io/Plataforma_de_Leilao/</a>
