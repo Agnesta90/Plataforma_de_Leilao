@@ -4,16 +4,16 @@ Aplicação frontend desenvolvida com React, Vite e Tailwind CSS, criada para si
 
 O projeto conta com:
 
-🔐 Autenticação e cadastro de usuários simulados
-👤 Página de perfil
-🛍️ Cadastro e visualização de produtos
-🔎 Pesquisa e filtros por categoria
-⏱️ Contagem regressiva dos leilões
-💰 Interface para realização de ofertas
-📦 Página de detalhes dos produtos
-📱 Interface responsiva
-🧩 Componentização com React
-🛣️ Navegação entre páginas com React Router
-📝 Validação de formulários com React Hook Form
+<p>🔐 Autenticação e cadastro de usuários simulados</p>
+<p>👤 Página de perfil</p>
+<p>🛍️ Cadastro e visualização de produtos</p>
+<p>🔎 Pesquisa e filtros por categoria</p>
+<p>⏱️ Contagem regressiva dos leilões</p>
+<p>💰 Interface para realização de ofertas</p>
+<p>📦 Página de detalhes dos produtos</p>
+<p>📱 Interface responsiva</p>
+<p>🧩 Componentização com React</p>
+<p>🛣️ Navegação entre páginas com React Router</p>
+<p>📝 Validação de formulários com React Hook Form</p>p
 
-Observação: esta versão é um projeto frontend para fins de estudo e demonstração. Os dados de usuários, produtos e ofertas ainda são simulados no navegador.
+## Observação: esta versão é um projeto frontend para fins de estudo e demonstração. Os dados de usuários, produtos e ofertas ainda são simulados no navegador.
