@@ -50,7 +50,7 @@ export default function Cadastro(){
     }
 
     return (
-        <>
+        <main className="w-screen h-screen">
             <header className="p-2.5  bg-[#1E1C2F] hidden tablet:block">
                 <Link to='/'>
                     <div className="m-w-100 h-full  p-2 flex items-center ">
@@ -123,6 +123,6 @@ export default function Cadastro(){
                     </div> 
                 </form>
             </div>
-        </>
+        </main>
     )
 }

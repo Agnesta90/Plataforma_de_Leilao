@@ -82,7 +82,7 @@ function Login(){
                                     <Link to='/'>
                                         <div className=" flex items-center ">
                                             <div className="w-20 laptop:w-40">
-                                                <img className="w-full" src="public/img/logo.png" alt="Logo" />
+                                                <img className="w-full" src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" />
                                             </div>
                                             <h1 className='text-white text-2xl laptop:text-4xl m-2'>Compra  <br />Fácil</h1>
                                         </div>
@@ -95,7 +95,7 @@ function Login(){
                             </header>
                             <main className='m-3.5 w-full laptop:w-150 laptop:m-auto laptop:col-[1-1] laptop:bg-white laptop:row-start-1 p-3 rounded-2xl bg-[#2D2A4A]/40 backdrop-blur-md border border-white/10 '>
                                 <div className="w-20 m-auto laptop:hidden">
-                                    <img className="w-full" src="public/img/logo.png" alt="Logo" />
+                                    <img className="w-full" src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" />
                                 </div>
                                 <h1 className='text-[50px] text-center m-1'>Login</h1>
                                 <form onSubmit={loginForm.handleSubmit(onSubmitLogin)} className='flex flex-col gap-4 m-3.5'>
@@ -128,7 +128,7 @@ function Login(){
                                 <Link to='/'>
                                     <div className=" flex items-center ">
                                         <div className="w-40">
-                                            <img className="w-full" src="public/img/logo.png" alt="Logo" />
+                                            <img className="w-full" src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" />
                                         </div>
                                         <h1 className='text-white text-4xl m-2'>Compra  <br />Fácil</h1>
                                     </div>
@@ -142,7 +142,7 @@ function Login(){
                             <form onSubmit={singForm.handleSubmit(onSubmitSing)} className='laptop:grid grid-cols-[1fr_1fr_120px_96px] grid-rows-[70px_70px_160px_70px_70px] laptop:gap-2.5 flex flex-col gap-6 overflow-hidden w-full h-177.5 laptop:h-128 laptop:bg-white  bg-[#2D2A4A]/40 backdrop-blur-md border border-white/10 p-3.5 rounded-3xl '> 
                                 <div className='flex items-center gap-1.5 laptop:hidden '>
                                     <div className="w-10 ">
-                                        <img className="w-full" src="public/img/logo.png" alt="Logo" /> 
+                                        <img className="w-full" src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" /> 
                                     </div>
                                     <p>Sing in</p>
                                 </div>
