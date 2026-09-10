@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     }
   ],
   {
-    basename: '/Site_de_Leilao/',
+    basename: '/Plataforma_de_Leilao/',
   }
 )
 createRoot(document.getElementById('root')).render(

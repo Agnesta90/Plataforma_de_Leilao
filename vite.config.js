@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Site_de_Leilao/'
+  base: '/Plataforma_de_Leilao/'
 })

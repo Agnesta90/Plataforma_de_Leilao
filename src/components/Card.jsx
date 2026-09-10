@@ -14,17 +14,16 @@ function Card({dados, onclick}) {
         }
         return `${dados.time}s`
     }
-    // 
+
     return (
         <>
-            <article  className=" p-3 rounded-2xl flex flex-col justify-around text-center text-black cursor-pointer bg-white  border-black font-bold shadow-[4px_4px_0px_#000] w-50 h-70 " onClick={onclick} key={dados.id_Produto}>
+            <article  className=" p-3 rounded-2xl flex flex-col justify-around text-center text-black cursor-pointer bg-white  border-black font-bold shadow-[4px_4px_0px_#000] w-50 h-70 " onClick={onclick}>
                 <section className="w-full h-2/3  rounded-2xl overflow-hidden ">
-                    <img src={dados.img_produto} alt="" className="w-full h-full object-cover"/>
+                    <img src={dados.img_produto} alt={dados.name_produto} className="w-full h-full object-cover"/>
                 </section>
                 <p className="font-bold ">{dados.name_produto}</p>
                 <section className="flex justify-between">
                     <p className="w-20 flex flex-nowrap items-center gap-1.5"><Hourglass size={16}/>{Formatacao()} </p>
-                     
                     <p className='text-fuchsia-800 '>{new Intl.NumberFormat(navigator.language,{style: "currency", currency: "BRL"}).format(dados.value)}</p>
                 </section>
                 <section className='w-full text-start flex gap-1.5 items-center'>

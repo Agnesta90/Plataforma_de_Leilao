@@ -37,9 +37,9 @@ export default function Leilao() {
     { id: 7, nome: "Lucas", valor: 63900 },
     { id: 8, nome: "Fernanda", valor: 72800 },
     { id: 9, nome: "Rafael", valor: 85600 },
-    { id: 10, nome: "Camila", valor: 97500 },
-  ]);
-
+    { id: 10,nome: "Camila", valor: 97500 }
+  ])
+  
   function aceitar(id) {
     const novaLista = pessoas.filter((item) => item.id === id);
     setPessoas(novaLista);
@@ -62,13 +62,32 @@ export default function Leilao() {
             <h1 className="text-2xl font-bold"> Lista de Lances</h1>
             <p>{tempoFormatado}</p>
           </section>
-          {lances && (
-            <aside className="mt-3 w-full flex flex-col gap-1.5 h-90 overflow-x-scroll no-scrollbar">
-              {pessoas.map((item) => {
-                return ganhador ? (
+          <aside className="mt-3 w-full flex flex-col gap-1.5 h-90 overflow-x-scroll no-scrollbar">
+            {pessoas.map((item) => {
+              return ganhador ? (
+                <div
+                  key={item.id}
+                  className="grid grid-cols-[55px_130px_1fr]  text-white w-full border-3 border-green-600 items-center rounded-2xl p-1.5 "
+                >
+                  <CircleUser size={50} color="white" />
+                  <span>
+                    <h2>{item.nome}</h2>
+                    <p className="mb-auto">
+                      {new Intl.NumberFormat(navigator.language, {
+                        style: "currency",
+                        currency: "BRL",
+                      }).format(item.valor)}
+                    </p>
+                  </span>
+                  <aside className="bg-green-600 p-2 text-center rounded-2xl ">
+                    <p>Ganhador!</p>
+                  </aside>
+                </div>
+              ) : (
+                <>
                   <div
                     key={item.id}
-                    className="grid grid-cols-[55px_130px_1fr]  text-white w-full border-3 border-green-600 items-center rounded-2xl p-1.5 "
+                    className="grid grid-cols-[55px_130px_85px_90px]  text-white w-full border items-center rounded-2xl p-1.5"
                   >
                     <CircleUser size={50} color="white" />
                     <span>
@@ -80,46 +99,25 @@ export default function Leilao() {
                         }).format(item.valor)}
                       </p>
                     </span>
-                    <aside className="bg-green-600 p-2 text-center rounded-2xl ">
-                      <p>Ganhador!</p>
-                    </aside>
-                  </div>
-                ) : (
-                  <>
-                    <div
-                      key={item.id}
-                      className="grid grid-cols-[55px_130px_85px_90px]  text-white w-full border items-center rounded-2xl p-1.5"
+                    <button
+                      className="w-21 p-2 rounded-2xl border-4 border-black bg-[#8B5BEE] text-white shadow-[4px_4px_0px_#000] cursor-pointer hover:-translate-y-1 active:shadow-[1px_1px_0px_#000] mt-3 mb-3"
+                      onClick={() => {
+                        (aceitar(item.id), setGanhador(true));
+                      }}
                     >
-                      <CircleUser size={50} color="white" />
-                      <span>
-                        <h2>{item.nome}</h2>
-                        <p className="mb-auto">
-                          {new Intl.NumberFormat(navigator.language, {
-                            style: "currency",
-                            currency: "BRL",
-                          }).format(item.valor)}
-                        </p>
-                      </span>
-                      <button
-                        className="w-21 p-2 rounded-2xl border-4 border-black bg-[#8B5BEE] text-white shadow-[4px_4px_0px_#000] cursor-pointer hover:-translate-y-1 active:shadow-[1px_1px_0px_#000] mt-3 mb-3"
-                        onClick={() => {
-                          (aceitar(item.id), setGanhador(true));
-                        }}
-                      >
-                        Aceitar
-                      </button>
-                      <button
-                        className=" w-23 p-2 rounded-2xl border-4 border-black bg-[#8c5beeaf] text-white shadow-[4px_4px_0px_#000] cursor-pointer hover:-translate-y-1 active:shadow-[1px_1px_0px_#000] mt-3 mb-3"
-                        onClick={() => rejeitar(item.id)}
-                      >
-                        Rejeitar
-                      </button>
-                    </div>
-                  </>
-                );
-              })}
-            </aside>
-          )}
+                      Aceitar
+                    </button>
+                    <button
+                      className=" w-23 p-2 rounded-2xl border-4 border-black bg-[#8c5beeaf] text-white shadow-[4px_4px_0px_#000] cursor-pointer hover:-translate-y-1 active:shadow-[1px_1px_0px_#000] mt-3 mb-3"
+                      onClick={() => rejeitar(item.id)}
+                    >
+                      Rejeitar
+                    </button>
+                  </div>
+                </>
+              );
+            })}
+          </aside>
         </article>
       </main>
     </>
