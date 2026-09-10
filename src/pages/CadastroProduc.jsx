@@ -50,21 +50,21 @@ export default function Cadastro(){
     }
 
     return (
-        <main className="w-screen h-screen">
+        <main className=" w-screen h-screen">
             <header className="p-2.5  bg-[#1E1C2F] hidden tablet:block">
                 <Link to='/'>
                     <div className="m-w-100 h-full  p-2 flex items-center ">
                         <div className="w-25">
-                            <img className="w-full" src="./img/logo.png" alt="Logo" />
+                            <img className="w-full" src="src/img/logo.png" alt="Logo" />
                         </div>
                         <h1 className='text-white text-4xl m-2'>Compra<br/>Fácil</h1>
                     </div>
                 </Link>
             </header>
-            <div className="p-4 bg-[#1E1C2F] tablet:bg-white overflow-hidden w-screen text-white tablet:text-black  ">
+            <div className="p-4 bg-[#1E1C2F] tablet:bg-white overflow-hidden w-screen h-screen tablet:h-auto text-white tablet:text-black  ">
                 <form onSubmit={handleSubmit(onSubmit)} className='tablet:w-200 tablet:h-110 tablet:m-auto tablet:grid grid-cols-[400px_1fr_120px_100px] tablet:mt-6  grid-rows-[repeat(6,80px)] flex flex-col gap-3.5 tablet:'>
                     <div className="w-15 block tablet:hidden" onClick={() => navigate('/')}>
-                        <img className="w-full" src="./img/logo.png" alt="Logo" />
+                        <img className="w-full" src="src/img/logo.png" alt="Logo" />
                     </div>
                     <div className='col-start-1 row-[1/2] order-2 tablet:order-1 '>
                         <h2 className='font-bold '>Nome </h2>

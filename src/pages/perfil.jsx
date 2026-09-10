@@ -28,7 +28,7 @@ function Perfil(){
                             {usuario?.img ? (
                                 <img src={usuario.img} alt="Foto de perfil" className='w-full h-full object-cover' />
                             ) : (
-                                <img src='/img/perfil.png' alt="Avatar padrão" className='w-full h-full object-cover' />
+                                <img src='src/img/perfil.png' alt="Avatar padrão" className='w-full h-full object-cover' />
                             )}
                         </div>
                         <span className='text-center m-1.5 '>
@@ -45,7 +45,7 @@ function Perfil(){
                     </div>
                     <main className='col-start-3 row-start-2 shadow-2xl p-2.5'>
                         <article className='flex flex-row gap-1.5'>
-                            <section className='w-8'><img src={`${import.meta.env.BASE_URL}fogo.png`} alt="Fogo roxo"></img></section>
+                            <section className='w-8'><img src="src/img/fogo.png" alt="Fogo roxo"></img></section>
                             <h1 className='text-2xl font-bold mb-4'>Produtos em Leilão</h1>
                         </article>
                         <article className='w-full h-79'>
@@ -62,7 +62,7 @@ function Perfil(){
                             }
                         </article>
                         <article className='flex flex-row gap-1.5'>
-                            <section className='w-8'><img src={`${import.meta.env.BASE_URL}caixa.png`} alt="caixa roxa"></img></section>
+                            <section className='w-8'><img src="src/img/caixa.png" alt="caixa roxa"></img></section>
                             <h1 className='text-2xl font-bold mb-4'>Produtos Leiloados</h1>
                         </article>
                         {usuario &&

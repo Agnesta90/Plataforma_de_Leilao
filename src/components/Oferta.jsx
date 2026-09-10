@@ -56,7 +56,7 @@ function Oferta({className, time, ProdutoSelecionado}){
                         <>
                             <article className="text-white tablet:rounded-2xl  bg-[#3d0f78]  shadow-[4px_4px_0px_#000] p-3.5 flex flex-col ">
                                 <div className="flex justify-center gap-1.5">
-                                    <section className="w-10 tablet:mx-auto"><img  src={`${import.meta.env.BASE_URL}marteloIcon.png`} alt="martelo de leilão" className="w-full"/></section>
+                                    <section className="w-10 tablet:mx-auto"><img  src='src/img/marteloIcon.png' alt="martelo de leilão" className="w-full"/></section>
                                     <h1 className="tablet:text-3xl text-2xl text-center font-semibold mt-1.5 mb-1.5">Qual o seu lance?</h1>
                                 </div>
                                 <form>
