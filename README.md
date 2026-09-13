@@ -105,10 +105,6 @@ A ausência de backend é intencional nesta versão, pois o objetivo principal �
 
 ---
 
-## 👨‍💻 Sobre o projeto
-
-Projeto desenvolvido para estudo e evolução das minhas habilidades em desenvolvimento Front-end com React.
-
 ## Usuarios token
 * Nome: João Silva
 * Email: joao.silva@email.com
@@ -117,4 +113,10 @@ Projeto desenvolvido para estudo e evolução das minhas habilidades em desenvol
 * Nome: Maria Oliveira
 * Email: maria.oliveira@email.com
 * password: Maria@123
-       
+
+
+---
+
+## 👨‍💻 Sobre o projeto
+
+Projeto desenvolvido para estudo e evolução das minhas habilidades em desenvolvimento Front-end com React.  
