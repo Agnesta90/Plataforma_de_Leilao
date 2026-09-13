@@ -134,7 +134,7 @@ export default function Head({ className }) {
               {!usuario && <Button_menu onclick={() => navigate('/login')}><LogIn size={20} color="#000000" strokeWidth={1.5} />Login/cadastro</Button_menu>}
               <Button_menu onclick={() => navigate('/carrinho')}><ShoppingCart size={20} color="#000000" strokeWidth={1.5}></ShoppingCart>Carrinho</Button_menu>
               <Button_menu onclick={() => navigate('/perfil')}>
-                <div className="w-6 h-6"><img src='./img/marteloIcon.png' alt="icon de martelo" /></div>Meus Leilões</Button_menu>
+                <div className="w-6 h-6"><img src={`${import.meta.env.BASE_URL}img/marteloIcon.png`} alt="icon de martelo" /></div>Meus Leilões</Button_menu>
               <Button_menu><SquareArrowRightExit size={20} color="#000000" strokeWidth={1.5} /><p >Sair da sessão</p></Button_menu>
             </dialog>
           </div>
