@@ -36,7 +36,7 @@ export default function Head({ className }) {
           <Link to="/">
             <div className="flex flex-row items-center tablet:m-2.5 ">
               <div className="w-18 tablet:w-30 ">
-                <img className="w-full" src="./img/logo.png" alt="Logo" />
+                <img className="w-full" src="/public/img/log.png" alt="Logo" />
               </div>
               <h1 className="text-white tablet:text-3xl m-2 text-2xl hidden tablet:block">
                 Compra <br />
